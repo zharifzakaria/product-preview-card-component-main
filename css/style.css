@@ -1,0 +1,217 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+body {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.725em;
+  margin: 0;
+  padding: 0;
+  background-color: #f2ebe3;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96%;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+}
+
+.container .card {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 375px) {
+  .container .card {
+    flex-flow: column nowrap;
+    margin: 0 16px;
+  }
+}
+
+.container .card__image {
+  width: 280px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 375px) {
+  .container .card__image {
+    height: 290px;
+    width: 375px;
+  }
+}
+
+.container .card__image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 375px) {
+  .container .card__image img {
+    width: 92%;
+    height: auto;
+    transform: translateY(-120px);
+  }
+}
+
+.container .card__description {
+  width: 280px;
+  padding: 0 24px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 375px) {
+  .container .card__description {
+    height: 330px;
+  }
+}
+
+.container .card__description .tag {
+  text-transform: uppercase;
+  font-size: 0.725em;
+  letter-spacing: 0.35em;
+  color: #6c7289;
+}
+
+@media only screen and (max-width: 375px) {
+  .container .card__description .tag {
+    font-size: 0.825em;
+  }
+}
+
+.container .card__description .title {
+  font-family: "Fraunces", serif;
+  font-size: 1.825em;
+  font-weight: 700;
+  line-height: 1em;
+  max-width: 220px;
+  margin-bottom: 4px;
+  color: #1c232b;
+}
+
+@media only screen and (max-width: 375px) {
+  .container .card__description .title {
+    font-size: 2.25em;
+    max-width: 320px;
+    margin-top: 4px;
+  }
+}
+
+.container .card__description .paragraph {
+  font-size: 0.825em;
+  line-height: 1.5em;
+  color: #6c7289;
+  max-width: 200px;
+}
+
+@media only screen and (max-width: 375px) {
+  .container .card__description .paragraph {
+    font-size: 0.9em;
+    max-width: 320px;
+    line-height: 1.725em;
+  }
+}
+
+.container .card__description .price {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.container .card__description .price__tag {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 1.75em;
+  color: #3c8067;
+}
+
+@media only screen and (max-width: 375px) {
+  .container .card__description .price__tag {
+    font-size: 2.125em;
+  }
+}
+
+.container .card__description .price__before {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #6c7289;
+  text-decoration: line-through;
+  padding: 16px;
+}
+
+@media only screen and (max-width: 375px) {
+  .container .card__description .price__before {
+    font-size: 0.875em;
+  }
+}
+
+.container .card__description button {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  background-color: #3c8067;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+  .container .card__description button {
+    font-size: 0.915em;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+}
+
+.container .card__description button:hover {
+  background-color: #1b4132;
+}
+
+.container .card__description button svg {
+  padding-right: 5px;
+}
